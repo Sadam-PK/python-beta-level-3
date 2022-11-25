@@ -1,4 +1,6 @@
 # import unittest
+# import pdb
+
 #
 #
 # def join_name(fname, lname):
@@ -47,47 +49,51 @@
 #
 # test_function()
 
+
 ########## Exercise 1 ##############
 
-class MathOperations:
-    def add(self, n1, n2):
-        return n1 + n2
-
-    def sub(self, n1, n2):
-        return n2 - n1
-
-    def mul(self, n1, n2):
-        return n1 * n2
-
-    def div(self, n1, n2):
-        return n2 / n1
-
-    def menu(self):
-        print("\nSelect operation.")
-        print("1. Add, 2. Subtract, 3. Multiplication, 4. Division, 5. Exit")
-
-
-mo = MathOperations()
-
-while True:
-    mo.menu()
-    choice = input('Enter: ')
-
-    if choice == '1':
-        sumNo = mo.add(20, 30)
-        print(f'Addition = {sumNo}')
-
-    elif choice == '2':
-        subNo = mo.sub(50, 100)
-        print(f'Subtraction = {subNo}')
-
-    elif choice == '3':
-        mulNo = mo.mul(10, 20)
-        print(f'Multiplication = {mulNo}')
-
-    elif choice == '4':
-        divNo = mo.div(10, 20)
-        print(f'Division = {divNo}')
-
-    else:
-        exit(0)
+# class MathOperations:
+#     pdb.set_trace()
+#
+#     def add(self, n1, n2):
+#         return n1 + n2
+#
+#     def sub(self, n1, n2):
+#         return n2 - n1
+#
+#     def mul(self, n1, n2):
+#         return n1 * n2
+#
+#     def div(self, n1, n2):
+#         return n2 / n1
+#
+#     def menu(self):
+#         print("\nSelect operation.")
+#         print("1. Add, 2. Subtract, 3. Multiplication, 4. Division, 5. Exit")
+#
+#
+# mo = MathOperations()
+#
+# while True:
+#     mo.menu()
+#     choice = input('Enter: ')
+#
+#     if choice == '1':
+#         sumNo = mo.add(20, 30)
+#         print(f'Addition = {sumNo}')
+#
+#     elif choice == '2':
+#         subNo = mo.sub(50, 100)
+#         print(f'Subtraction = {subNo}')
+#
+#     elif choice == '3':
+#         mulNo = mo.mul(10, 20)
+#         print(f'Multiplication = {mulNo}')
+#
+#     elif choice == '4':
+#         divNo = mo.div(10, 20)
+#         print(f'Division = {divNo}')
+#
+#     else:
+#         exit(0)
+#
