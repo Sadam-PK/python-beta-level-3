@@ -1,6 +1,5 @@
 # import unittest
 # import pdb
-
 #
 #
 # def join_name(fname, lname):
@@ -50,10 +49,11 @@
 # test_function()
 
 
-########## Exercise 1 ##############
-
+# ---------- Exercise 1 ------------
+#
+#
 # class MathOperations:
-#     pdb.set_trace()
+#     # pdb.set_trace()
 #
 #     def add(self, n1, n2):
 #         return n1 + n2
@@ -74,26 +74,29 @@
 #
 # mo = MathOperations()
 #
-# while True:
-#     mo.menu()
-#     choice = input('Enter: ')
+# if __name__ == '__main__':
 #
-#     if choice == '1':
-#         sumNo = mo.add(20, 30)
-#         print(f'Addition = {sumNo}')
+#     pdb.set_trace()
 #
-#     elif choice == '2':
-#         subNo = mo.sub(50, 100)
-#         print(f'Subtraction = {subNo}')
+#     while True:
+#         mo.menu()
+#         choice = input('Enter: ')
 #
-#     elif choice == '3':
-#         mulNo = mo.mul(10, 20)
-#         print(f'Multiplication = {mulNo}')
+#         if choice == '1':
+#             sumNo = mo.add(20, 30)
+#             print(f'Addition = {sumNo}')
 #
-#     elif choice == '4':
-#         divNo = mo.div(10, 20)
-#         print(f'Division = {divNo}')
+#         elif choice == '2':
+#             subNo = mo.sub(50, 100)
+#             print(f'Subtraction = {subNo}')
 #
-#     else:
-#         exit(0)
+#         elif choice == '3':
+#             mulNo = mo.mul(10, 20)
+#             print(f'Multiplication = {mulNo}')
 #
+#         elif choice == '4':
+#             divNo = mo.div(10, 20)
+#             print(f'Division = {divNo}')
+#
+#         else:
+#             exit(0)
