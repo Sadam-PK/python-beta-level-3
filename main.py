@@ -48,7 +48,6 @@
 #
 # test_function()
 
-
 # ---------- Exercise 1 ------------
 #
 #
@@ -185,3 +184,59 @@
 # num.inner_num(10)
 # num.inner_num(20)
 # num.inner_num(30)
+#
+# def decorate_func(func):
+#     def wrapper_func():
+#         print('X' * 10)
+#         func()
+#         print('Y' * 10)
+#
+#     return wrapper_func
+#
+#
+# @decorate_func
+# def myfun():
+#     print('Normal Function.')
+#
+#
+# myfun()
+
+# #------- @decorate line replaces these two lines
+# fun = decorate_func(myfun)
+# fun()
+
+# #--------------- Lambda -----------------------
+#
+# def my_power_raiser(n):
+#     return lambda a: a ** n
+#
+#
+# square_it = my_power_raiser(2)
+# cube_it = my_power_raiser(3)
+# quad_it = my_power_raiser(4)
+#
+# input_numb = 3
+#
+# print(f'square of the number {input_numb} = ', square_it(input_numb))
+# print(f'cube of the number {input_numb} = ', cube_it(input_numb))
+# print(f'quad of the number {input_numb} = ', quad_it(input_numb))
+
+
+# #-------------- Profiling --------------------
+# cProfile.run('2 + 2')
+# def internal_method():
+#     temp = 0
+#     for i in range(1000):
+#         temp += 1
+#     return temp
+#
+#
+# def external_method():
+#     counter = 0
+#     for i in range(1000):
+#         counter += internal_method()
+#     print('Total Iterations:', counter)
+#     return
+#
+#
+# cProfile.run('external_method()')
