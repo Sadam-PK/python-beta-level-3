@@ -100,3 +100,88 @@
 #
 #         else:
 #             exit(0)
+
+# ----------- Decorators --------------
+#
+# def div(a, b):
+#     print(a / b)
+#
+#
+# def smart_div(func):
+#     def inner(a, b):
+#         if a < b:
+#             a, b = b, a
+#             return func(a, b)
+#
+#     return inner
+#
+#
+# div = smart_div(div)
+# div(2, 4)
+
+# def inc(x):
+#     return x + 1
+#
+#
+# def operate(func, x):
+#     result = func(x)
+#     print(result)
+#
+#
+# operate(inc, 2)
+
+
+# def display(message):
+#     greet = 'Hi,'
+#
+#     def printer():
+#         print(greet, message)
+#     return printer
+#
+#
+# func = display('Python is awesome.')
+#
+# func()
+
+# ------------- Closure -------------
+# numbers = []
+#
+#
+# def enter_num(x):
+#     numbers.append(x)
+#     print(numbers)
+#
+#
+# enter_num(10)
+# enter_num(20)
+# enter_num(30)
+
+# ----- applying closure ----------
+# def outer_number():
+#     numbers = []
+#
+#     def inner_number(x):
+#         numbers.append(x)
+#         print(numbers)
+#
+#     return inner_number
+#
+#
+# num = outer_number()
+# num(10)
+# num(20)
+# num(30)
+
+# ---------- Closure with classes ------------
+# class OuterNum:
+#     numbers = []
+#
+#     def inner_num(self, x):
+#         self.numbers.append(x)
+#         print(self.numbers)
+#
+#
+# num = OuterNum()
+# num.inner_num(10)
+# num.inner_num(20)
+# num.inner_num(30)
